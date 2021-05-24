@@ -26,6 +26,8 @@ void testDSTree(vector<char> data){
     ASSERT(set1[0] == 'e', "The function getElementsSet is not working");
     ASSERT(set1[1] == 'd', "The function getElementsSet is not working");
 
+    ASSERT(ds->size(5) == 3, "The function size(x) is not working");
+
     ds->Union(2, 5);
     ds->Union(3, 1);
     ASSERT(ds->sets() == 1, "The function sets is not working");
@@ -50,6 +52,8 @@ void testDSArray(vector<char> data){
     sort(set1.begin(), set1.end());
     ASSERT(set1[0] == 'e', "The function getElementsSet is not working");
     ASSERT(set1[1] == 'd', "The function getElementsSet is not working");
+    
+    ASSERT(ds->size(5) == 3, "The function size(x) is not working");
 
     ds->Union(2, 5);
     ds->Union(3, 1);

@@ -17,7 +17,7 @@ public:
     virtual void MakeSet(int x) = 0;
     //MakseSet all elements
     virtual void MakeSet() = 0;
-    //Find the root of x
+    //Find the root of x (with optimization)
     virtual int Find(int x) = 0;
     //Union two sets represented by x and y (apply rank)
     virtual void Union(int x, int y) = 0;
