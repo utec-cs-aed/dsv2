@@ -11,6 +11,7 @@ public:
     /*
     * x, y are indexes
     */ 
+   
     virtual  ~DisjoinSet();
 
     //MakseSet the element with index x
@@ -29,11 +30,11 @@ public:
     //number of sets
     virtual int sets() = 0; 
     //total number of elements that belong to the set of x
-    virtual int size(int x) = 0; 
+    virtual int size(int x) = 0; //Complejidad?
     //add the element to the set of x
     virtual void add(T element, int x);
     //return all elements that belong to the set of x
-    virtual vector<T> getElementsSet(int x);
+    virtual vector<T> getElementsSet(int x);//Complejidad?
 };
 
 #endif
