@@ -5,7 +5,7 @@
 
 > Completar la complejidad de cada operación según la estructura de datos utilizada. 
 
-|Estructura | Find | Union | Size(set)|
+|Estructura | Find | Union | Size(x)|
 |-----------|------|-------|-----|
 | Tree | -- | -- | -- |
 | Array |-- | -- | -- |
