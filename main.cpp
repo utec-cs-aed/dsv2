@@ -3,12 +3,11 @@
 #include <vector>       
 
 #include "tester.h"
-#include "dstree.h"
 #include "dsarray.h"
 
 using namespace std;
 
-void test(vector<char> data, DisjoinSet<char>* ds){    
+void test(vector<char> data, DisjoinSetArray<char>* ds){    
     ASSERT(ds->sets() == 8, "The function sets is not working");
     ds->Union(0, 2);
     ds->Union(5, 6);
@@ -38,6 +37,5 @@ int main()
 {    
     vector<char> data = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};  
     test(data, new DisjoinSetArray<char>(data));
-    test(data, new DisjoinSetTree<char>(data));
     return 0;
 }
